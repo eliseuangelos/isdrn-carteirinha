@@ -8,6 +8,8 @@ function carteira(){
 		document.getElementById("pcargo").innerHTML = cargo + "&nbsp;";
 /*Copiar Nome*/		nome = document.getElementById("nome").value;
 		document.getElementById("pnome").innerHTML = nome + "&nbsp;";
+/*Copiar DOC TIPO*/		docrg = document.getElementById("doctype").value;
+		document.getElementById("pdoctype").innerHTML = doctype + "&nbsp;";
 /*Copiar RG*/		docrg = document.getElementById("docrg").value;
 		document.getElementById("pdocrg").innerHTML = docrg + "&nbsp;";
 /*Copiar C Cadastral*/		doccc = document.getElementById("doccc").value;
@@ -425,7 +427,11 @@ fileChooser.onchange = e => {
 <label for="nome">Nome Completo: </label>
 <input type="text" id="nome" placeholder="Nome Completo"/>
 <br />
-<label for="docrg">Documento RG: </label>
+<select name="DocType" id="doctype">
+<option value="&nbsp;">RG</option>
+<option value="Membro">CPF</option>
+</select>
+<label for="docrg">Numero do Documento</label>
 <input type="text" id="docrg" placeholder="Registro Geral"/>
 &nbsp;
 <label for="doccc">Código Cadastral: </label>
