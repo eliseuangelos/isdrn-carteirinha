@@ -27,7 +27,7 @@ function carteira(){
 /*Copiar Expedição */		loccong = document.getElementById("loccong").value;
 		document.getElementById("ploccong").innerHTML = loccong;
 /*Copiar Pastor */		asspr = document.getElementById("asspr").value;
-		document.getElementById("passpr").innerHTML = asspr ;
+		document.getElementById("nomepasspr").innerHTML = asspr ;
 }
 </script>
 </head>
@@ -198,10 +198,12 @@ max-width: 300px;
 align-self: flex-end;
 text-align: center;
 margin: 0px auto 0px auto;
-padding: 2px 0px 0px 0px;
+padding: 2px 0px 10px 0px;
 border-top: 1px solid #000000;
 }
-
+.assinatura #passpr #nomepasspr {
+display: inline;
+}
 --></style>
 
 <div style="width: 722px; max-width: 722px; height: 250px; max-height: 250px; margin: 0px auto;" id="todo-frente-verso"><!-- container -->
@@ -241,7 +243,7 @@ border-top: 1px solid #000000;
 
 </div><!-- /dados/ -->
 
-<!--Assinatura--><div class="assinatura"><!--<img src="./arquivos/ass.svg"/ style="position: absolute; margin-top: -21px; margin-left: 90px;">--><div id="passpr">Pastor: <br />&npsp; </div>
+<!--Assinatura--><div class="assinatura"><!--<img src="./arquivos/ass.svg"/ style="position: absolute; margin-top: -21px; margin-left: 90px;">--><div id="passpr">Pastor: <div id="nomepasspr">Nome</div></div>
 </div><!--/Assinatura/-->
 
 </div>
