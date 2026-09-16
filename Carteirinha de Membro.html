@@ -1,0 +1,506 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Carteirinha  HTML</title>
+<script type="text/javascript">
+function carteira(){
+/*Copiar Cargo*/		cargo = document.getElementById("cargo").value;
+		document.getElementById("pcargo").innerHTML = cargo + "&nbsp;";
+/*Copiar Nome*/		nome = document.getElementById("nome").value;
+		document.getElementById("pnome").innerHTML = nome + "&nbsp;";
+/*Copiar RG*/		docrg = document.getElementById("docrg").value;
+		document.getElementById("pdocrg").innerHTML = docrg + "&nbsp;";
+/*Copiar C Cadastral*/		doccc = document.getElementById("doccc").value;
+		document.getElementById("pdoccc").innerHTML = doccc + "&nbsp;";
+/*Copiar Batismo */		dtbtm = document.getElementById("dtbtm").value;
+		document.getElementById("pdtbtm").innerHTML = "&nbsp;" + dtbtm + "&nbsp;";
+/*Copiar Ordenacao */		dtord = document.getElementById("dtord").value;
+		document.getElementById("pdtord").innerHTML = "&nbsp;" + dtord + "&nbsp;";
+/*Copiar Nascimento */		dtnasc = document.getElementById("dtnasc").value;
+		document.getElementById("pdtnasc").innerHTML = "&nbsp;" + dtnasc + "&nbsp;";
+/*Copiar Nacionalidade */		nacion = document.getElementById("nacion").value;
+		document.getElementById("pnacion").innerHTML = "&nbsp;" + nacion + "&nbsp;";
+/*Copiar Estado Civil */		estciv = document.getElementById("estciv").value;
+		document.getElementById("pestciv").innerHTML = "&nbsp;" + estciv + "&nbsp;";
+/*Copiar Expedição */		dtexp = document.getElementById("dtexp").value;
+		document.getElementById("pdtexp").innerHTML = "&nbsp;" + dtexp + "&nbsp;";
+/*Copiar Expedição */		loccong = document.getElementById("loccong").value;
+		document.getElementById("ploccong").innerHTML = loccong;
+/*Copiar Pastor */		asspr = document.getElementById("asspr").value;
+		document.getElementById("passpr").innerHTML = asspr ;
+}
+</script>
+</head>
+<body style="width: 722px; padding: 0px 0px 20px 0px; margin: 0px auto;">
+
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+<style><!--
+
+@media print {
+    * {
+    visibility:hidden;
+    }
+    #todo-frente-verso * {
+    -webkit-print-color-adjust: exact;
+    visibility:visible !important;
+    }
+    .dadoscadform {
+    display: none;
+    }
+}
+
+.quad1bg {
+float: left;
+height: 244px;
+max-height: 244px;
+width: 358px;
+max-width: 358px;
+background: #007700;
+border: 1px solid #000000;
+font-family: sans-serif;
+}
+.quad1bgbra {
+height: 226px;
+max-height: 226px;
+width: 339px;
+max-width: 339px;
+border: 1px solid #000000;
+margin: 8px auto 0px auto;
+background: #ffffff;
+background-image: url('./Carteirinha de Membro_arquivos/quadrado-transparent.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+}
+.quad1ct {
+}
+.q-dados {
+height: 148px;
+max-height: 148px;
+width: 324px;
+max-width: 324px;
+border: 1px solid #000000;
+margin: 7px auto 0px auto;
+padding: 0px;
+}
+.c-foto {
+height: 75px;
+width: 75px;
+margin: 0px;
+padding: 0px;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000;
+float: left;
+}
+.c-cr-nome {
+height: 75px;
+max-height: 75px;
+width: 248px;
+max-width: 248px;
+margin: 0px 0px;
+border-bottom: 1px solid #000000;
+float: right;
+}
+.quad1bg * {
+overflow: hidden;
+}
+#pcargo {
+margin-top: 4px;
+margin-left: 5px;
+font-size: 12pt;
+font-weight: bold;
+text-transform: uppercase;
+}
+#pnome {
+margin-left: 5px;
+font-size: 12pt;
+max-height: 17px;
+}
+#pdocrg {
+font-size: 10pt;
+}
+.ppdocrg {
+margin-left: 5px;
+font-size: 10pt;
+font-weight: bold;
+}
+#pdoccc {
+font-size: 8pt;
+text-transform: uppercase;
+}
+.ppdoccc {
+margin-left: 5px;
+font-size: 8pt;
+font-weight: bold;
+}
+.preview-img {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+width: 75px;
+}
+#pdtbtm, #pdtord, #pdtnasc, #pnacion, #pestciv, #pdtexp {
+margin-top: 4px;
+font-size: 10pt;
+}
+.dvbat, .dvord, .dvnasc {
+border-bottom: 1px solid #000000;
+}
+.dvbat, .dvord, .dvnasc, .dvnacio, .dvestciv, .dvexp {
+vertical-align: middle;
+display: table-cell;
+text-align: center;
+margin: 0px 0px;
+height: 36px;
+max-height: 36px;
+}
+.dvbat {
+width: 96px;
+max-width: 96px;
+border-right: 1px solid #000000;
+text-align: center;
+}
+.dvord {
+width: 112px;
+max-width: 112px;
+border-right: 1px solid #000000;
+}
+.dvnasc {
+width: 114px;
+max-width: 114px;
+}
+.dvnacio {
+width: 112px;
+max-width: 112px;
+border-right: 1px solid #000000;
+}
+.dvestciv {
+width: 96px;
+max-width: 96px;
+border-right: 1px solid #000000;
+}
+.dvexp {
+width: 114px;
+max-width: 114px;
+}
+.assinatura {
+width: 324px;
+max-width: 324px;
+height: 65px;
+margin: 0px auto 0px auto;
+font-size: 10pt;
+text-align: center;
+display: flex;
+}
+.assinatura #passpr {
+width: 300px;
+max-width: 300px;
+align-self: flex-end;
+text-align: center;
+margin: 0px auto 0px auto;
+padding: 2px 0px 0px 0px;
+border-top: 1px solid #000000;
+}
+
+--></style>
+
+<div style="width: 722px; max-width: 722px; height: 250px; max-height: 250px; margin: 0px auto;" id="todo-frente-verso"><!-- container -->
+
+<div class="quad1bg">
+<div class="quad1bgbra">
+<div class="quad1ct">
+    
+<!-- dados --><div class="q-dados">
+
+<div>
+<div class="c-foto"><img class="preview-img" id="pfotoredim"></div>
+<div class="c-cr-nome">
+<div id="pcargo">CARGO</div>
+<div id="pnome">Nome</div>
+<div style="line-height:12px; margin-top: 5px;">
+<span class="ppdocrg">RG:&nbsp;</span>
+<span id="pdocrg">888.888.888-8</span>
+<br />
+<span class="ppdoccc">Código Cadastral:&nbsp;</span>
+<span id="pdoccc">AAA-0001</span>
+</div>
+</div>
+</div>
+
+<div><!-- Datas -->
+<div class="dvbat"><span style="font-size: 8pt;">Data de Batismo</span><div id="pdtbtm">01/01/2000</div></div>
+<div class="dvord"><span style="font-size: 8pt;">Data de Ordenação</span><div id="pdtord">01/01/2000</div></div>
+<div class="dvnasc"><span style="font-size: 8pt;">Data de Nascimento</span><div id="pdtnasc">01/01/2000</div></div>
+</div><!-- /Datas/ -->
+
+<div><!-- nacio, est CV, Exp -->
+<div class="dvnacio"><span style="font-size: 8pt;">Nacionalidade</span><div id="pnacion">Brasileira</div></div>
+<div class="dvestciv"><span style="font-size: 8pt;">Estado Civil</span><div id="pestciv">Solteiro</div></div>
+<div class="dvexp"><span style="font-size: 8pt;">Data de Expedição</span><div id="pdtexp">01/01/2000</div></div>
+</div><!-- /nacio, est CV, Exp/ -->
+
+</div><!-- /dados/ -->
+
+<!--Assinatura--><div class="assinatura"><img src="./Carteirinha de Membro_arquivos/ass.svg"/ style="position: absolute; margin-top: -21px; margin-left: 90px;"><div id="passpr">Pastor Presidente: João M. dos Santos<br />Presidente Nacional</div>
+</div><!--/Assinatura/-->
+
+</div>
+</div>
+</div>	
+
+<style><!--
+/*verso*/
+.quadverbg {
+float: right;
+height: 244px;
+max-height: 244px;
+width: 358px;
+max-width: 358px;
+background: #007700;
+border: 1px solid #000000;
+font-family: sans-serif;
+}
+.quadverbg * {
+overflow: hidden;
+}
+.vercidade {
+height: 30px;
+max-height: 30px;
+width: 339px;
+max-width: 339px;
+border: 1px solid #000000;
+margin: 8px auto 8px auto;
+background: #ffffff;
+font-size: 14pt;
+font-weight: bold;
+text-transform: uppercase;
+line-height: 30px;
+text-align: center;
+letter-spacing: 2px;
+}
+.verlogoinf {
+height: 82px;
+max-height: 82px;
+width: 339px;
+max-width: 339px;
+border: 1px solid #000000;
+margin: 0px auto 8px auto;
+background: #ffffff;
+}
+.verdecvali {
+height: 93px;
+max-height: 93px;
+width: 339px;
+max-width: 339px;
+border: 1px solid #000000;
+margin: 0px auto;
+background: #ffffff;
+}
+.dadoscadform {
+width: 720px;
+text-align: center;
+line-height: 2em;
+background: #eeeeee;
+border-radius: 5px;
+font-size: 12pt;
+margin: 0px auto;
+padding: 5px 0px;
+}
+.dadoscadform label {
+font-weight: bold;
+margin-right: 5px;
+}
+.dadoscadform input {
+border: 1px solid #000000;
+border-radius: 3px;
+padding: 2px 5px;
+color: #333333;
+}
+.file-button {
+background: #33eeff;
+background-image: linear-gradient(#fafafa, #aaaaaa);
+}
+.file-button:hover {
+background: #33eeff;
+background-image: linear-gradient( #aaaaaa, #fafafa);
+}
+--></style>
+
+<!-- verso -->
+<div class="quadverbg">
+<div class="vercidade" id="ploccong">NAVEGANTES &mdash; SC</div>
+<div class="verlogoinf">
+<div style="width: 75px; height: 75px; float: left; margin: 2px 0px 2px 5px;"><img src="./Carteirinha de Membro_arquivos/NOVA-LOGO-ISDRN-2.png" style="width: 76px; height: 76px; margin-top: 1px;color: #007700;"/></div>
+<div style="width: 240px; height:82px; float: right; text-align: justify; margin-right: 10px; margin-top: ;display: flex;"><div style="margin: auto;"><span style="font-size: 7pt;">Sede Nacional Cidade de Navegantes - Santa Catarina (Rua: José Frederico de Souza, n° 895 - CEP 88371-116) CNPJ 14.050.479/0001-85 - <b>Igreja Só o Senhor é Deus Renovada</b>, com base jurídica na Constituição da República Federativa do Brasil Art. 153 $ 5 e Art 18 do Código Civil Brasileiro. Devidamente registrada de acordo com a lei.</span></div></div></div>
+<div class="verdecvali">
+<div style="font-size: 8pt; text-align: justify; margin: 5px auto; width: 320px;">Eu, como Servo de Deus comprometo-me a ser fiel a ele e a sua obra da qual sou filiado pela sua vontade, quando me chamou para trabalhar pela fé uma vez dada aos Santos.</div>
+<div style="font-size: 8pt; text-align: center; margin: 9px auto; width: 320px;">Consulte se este membro está em<br />
+devida comunhão com o ministério acessando:<br />
+<b>http://isdrn.blogspot.com.br/p/cadastrados.html</b></div>
+</div>
+</div>
+<!--/verso/-->
+
+
+</div><!-- /container/ -->
+
+<br />
+
+
+<fieldset class="dadoscadform">
+<form action='image/upload' method='post' encType="multipart/form-data">
+<label for="nome">Foto (2x2): </label>
+<!-- novo elemento! -->
+<input class="file-button" type="button" value="Selecionar">
+<!-- invisível -->
+<input class="file-chooser" type="file" accept="image/*" hidden>
+<!--<input type="submit" value="CARREGAR">-->
+<br />
+<fieldset style="display: inline; margin: 0px auto;">
+<legend for="fotoredimv">Alinhamento Vertical</legend>
+<input type="range" min="-200" max="0" value="0" id="fotoredimv">
+</fieldset>&nbsp;
+<fieldset style="display: inline;">
+<legend for="fotoredimh">Alinhamento Horizontal</legend>
+<input type="range" min="-200" max="0" value="0" id="fotoredimh">
+</fieldset>&nbsp;
+<fieldset style="display: inline;">
+<legend for="fotoredimz">Zoom</legend>
+<input type="range" min="10" max="50" value="1" id="fotoredimz">
+</fieldset>
+
+
+<script>
+let fotoredimv = document.getElementById("fotoredimv");
+let fotoredimh = document.getElementById("fotoredimh");
+let fotoredimz = document.getElementById("fotoredimz");
+let pfotoredim = document.getElementById("pfotoredim");
+
+fotoredimv.addEventListener("input", function(event) {
+pfotoredim.style.marginTop = event.target.value + "px"; }, false);
+fotoredimh.addEventListener("input", function(event) {
+pfotoredim.style.marginLeft = event.target.value + "px"; }, false);
+fotoredimz.addEventListener("input", function(event) {
+pfotoredim.style.width = event.target.value + "0%"; }, false);
+
+</script>
+
+</form>
+    
+<script><!--
+const $ = document.querySelector.bind(document);
+
+const previewImg = $('.preview-img');
+const fileChooser = $('.file-chooser');
+const fileButton = $('.file-button');
+
+fileButton.onclick = () => fileChooser.click();
+
+fileChooser.onchange = e => {
+    const fileToUpload = e.target.files.item(0);
+    const reader = new FileReader();
+    reader.onload = e => previewImg.src = e.target.result;
+    reader.readAsDataURL(fileToUpload);
+};
+--></script>
+<hr style="margin: 0px 0px 10px 0px;" />
+<label for="cargo">Cargo: </label>
+<select name="EstadoCivil" id="cargo">
+<option value="&nbsp;">---</option>
+<option value="Membro">Membro</option>
+<option value="Membra">Membra</option>
+<option value="Diácono">Diácono</option>
+<option value="Diaconisa">Diaconisa</option>
+<option value="Evangelista">Evangelista</option>
+<option value="Presbítero">Presbítero</option>
+<option value="Missionário">Missionário</option>
+<option value="Missionária">Missionária</option>
+<option value="Pastor">Pastor</option>
+<option value="Pastora">Pastora</option>
+<option value="Pastor Missionário">Pastor Missionário</option>
+</select>
+&nbsp;
+<label for="nome">Nome Completo: </label>
+<input type="text" id="nome" placeholder="Nome Completo"/>
+<br />
+<label for="docrg">Documento RG: </label>
+<input type="text" id="docrg" placeholder="Registro Geral"/>
+&nbsp;
+<label for="doccc">Código Cadastral: </label>
+<input type="text" id="doccc" placeholder="AAA-0000"/>
+
+<br />
+<label for="dtbtm">Data de Batismo: </label>
+<input type="text" id="dtbtm" placeholder="01/01/2000"/>
+<br />
+<label for="dtord">Data de Ordenação: </label>
+<input type="text" id="dtord" placeholder="01/01/2000"/>
+<br />
+<label for="dtnasc">Data de Nascimento: </label>
+<input type="text" id="dtnasc" placeholder="01/01/2000"/>
+<br />
+<label for="nacion">Nacionalidade: </label>
+<input type="text" id="nacion" placeholder="Brasileira"/>
+&nbsp;
+<label for="estciv">Estado Civil: </label>
+<select name="EstadoCivil" id="estciv">
+<option value="&nbsp;">---</option>
+<option value="Solteiro">Solteiro</option>
+<option value="Solteira">Solteira</option>
+<option value="Casado">Casado</option>
+<option value="Casada">Casada</option>
+<option value="Separado">Separado</option>
+<option value="Separada">Separada</option>
+<option value="Divorciado">Divorciado</option>
+<option value="Divorciada">Divorciada</option>
+<option value="Viúvo">Viúvo</option>
+<option value="Viúva">Viúva</option>
+</select>
+
+<br />
+<label for="dtexp">Data de Expedição: </label>
+<input type="text" id="dtexp" placeholder="01/01/2000 Data De Hoje!"/>
+<br />
+<label for="loccong">Congregação: </label>
+<select name="Cidade" id="loccong">
+<option value="Navegantes &ndash; SC">Navegantes &ndash; SC</option>
+<option value="Araranguá &ndash; SC">Araranguá &ndash; SC</option>
+<option value="Campo Erê &ndash; SC">Campo Erê &ndash; SC</option>
+<option value="Ilhota &ndash; SC">Ilhota &ndash; SC</option>
+<option value="Sul Brasil &ndash; SC">Sul Brasil &ndash; SC</option>
+<option value="Curitiba &ndash; PR">Curitiba &ndash; PR</option>
+<option value="São José dos Pinhais &ndash; PR">São José dos Pinhais &ndash; PR</option>
+<option value="Alto Paraná &ndash; PR">Alto Paraná &ndash; PR</option>
+<option value="Marmeleiro &ndash; PR">Marmeleiro &ndash; PR</option>
+<option value="Ortigueira &ndash; PR">Ortigueira &ndash; PR</option>
+<option value="Tamarana &ndash; PR">Tamarana &ndash; PR</option>
+<!--<option value="Santo Ângelo &ndash; RS">Santo Ângelo &ndash; RS</option>
+<option value="Entre Ijuís &ndash; RS">Entre Ijuís &ndash; RS</option>-->
+<option value="Eugenio de Castro &ndash; RS">Eugenio de Castro &ndash; RS</option>
+</select>
+<br />
+<label for="asspr">Pastor Responsável: </label>
+<select name="PastorResponsavel" id="asspr">
+<option value="Pastor Presidente: João M. dos Santos<br />Presidente Nacional">Pastor Missionário, João dos Santos</option>
+<!--<option value="Pastora: Verginia Berti Martins">Pastora, Verginia Berti Martins</option>
+<option value="Pastor: Narciso dos Santos">Pastor, Narciso dos Santos</option>
+<option value="Pastor: Jorge">Pastor, Jorge</option>
+<option value="Presbítero: Ivo da Costa">Presbítero, Ivo da Costa</option>
+<option value="Missionária: Ana">Missionária, Ana</option>
+<option value="Pastor: Edinei Leite de Oliveira">Pastor, Edinei Leite de Oliveira</option>
+<option value="Pastor: Natalino">Pastor, Natalino</option>
+<option value="Pastor: Jocelei">Pastor, Jocelei</option>
+<option value="Pastores Missionários: Edemar e Rose">Pastores Missionários, Edemar e Rose</option>
+<option value="Missionário: Carlos">Missionário, Carlos</option>
+<option value="Evangelista: Alessandro">Evangelista, Alessandro</option>
+<option value="Missionária: Terezinha">Missionária, Terezinha</option>
+<option value="Pastor: Adelmar">Pastor, Adelmar</option>-->
+
+</select>
+<br />
+<hr />
+<button type="button" onclick="carteira()" style="margin: 5px auto 10px;">Atualizar Informações</button>
+
+</fieldset>
+</body>
+</html>
